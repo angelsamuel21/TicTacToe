@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIC TAC TOE - Game</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="index-resp.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-logo">Tic Tac Toe</div>
+    <ul class="navbar-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="index.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="status">X's turn</div>
+    <div class="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <button class="reset-btn">Reset Game</button>
+  </div>
+
+  <!-- Victory Popup -->
+  <div class="popup-overlay">
+    <div class="popup">
+      <div class="emoji">🎉</div>
+      <h2>Congratulations!</h2>
+      <p id="winner-message" style="font-size: 1.5rem; margin: 1rem 0;"></p>
+      <button class="popup-btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
